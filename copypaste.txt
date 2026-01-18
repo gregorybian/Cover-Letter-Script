@@ -1,0 +1,26 @@
+Firmware Developer
+UBC Solar Racing
+Sep 2025 - Present
+• Collaborating with a cross-disciplinary team of 80+ software, electrical, and mechanical engineers, writing firmware in C for a solar-powered car, Cascadia, in preparation for FSGP and ASC solar racing competitions.
+• Coordinated with the BMS and Power & Signals subteams to calibrate the accelerator pedal across a CAN Bus to the motor, implementing fail-safes, and ensuring precise and reliable control in a safety-critical system.
+• Led the design and implementation of a multi-page LCD Screen over a STM32 microcontroller, consulting previous drivers for layout feedback and improving visibility of real-time driving and diagnostic data by 30%.
+• Implemented memory-robust, FreeRTOS-based task scheduling on the LCD screen to reduce latency by 20% and enable concurrent operation of LCD updates with driver lights and turn signal updates.
+
+
+UVIC Aero
+Software Developer
+Jan 2025 - Jun 2025
+• Configured a Linux-based flight simulator to test autonomous flight functions for Firefly, a fire-extinguishing drone; documented WSL and terminal workflows to enable knowledge transfer to future team members.
+• Engineered a Python-based hotspot detection algorithm for infrared images using thresholding and connected components analysis in OpenCV, identifying over 85% of high-intensity regions in test datasets of 30+ images.
+
+STEM and Computing/Robotics Instructor
+UBC Geering Up Outreach
+Jun 2025 - Aug 2025
+• Led STEM-based Summer Camps for Geering Up, a STEM Outreach Program at the Faculty of Applied Science at UBC, reaching over 28000+ youth a year.
+• Instructed up to 30 students per week on Arduino-based embedded programming, computer architecture, and data analysis in Python, explaining complex technical concepts in a fun and engaging way for youth.
+
+
+Websites:
+https://www.linkedin.com/in/gregorybian/
+https://gregorybian.github.io/
+https://github.com/gregorybian

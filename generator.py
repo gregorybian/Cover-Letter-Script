@@ -1,11 +1,12 @@
 # Variables to change
-company = "Honeywell"
-position = "Embedded Engineer"
+company = "Cyberium"
+position = "Co-op Student (Computer Science)"
 employer = ""
-address = "400 Maple Grove Road"
+address = "999 West Broadway, Suite 720, Vancouver, BC V5Z 1K5"
 length = "8"
-bs = "Redbrick’s mission to reimagine the modern browser through large-scale Chromium development and a thoughtful, user-focused design is particularly compelling to me, as it combines complex C++ engineering with real-world impact on how people work every day. As someone who values responsibility, collaboration, and mentorship, I am excited about the opportunity to contribute and grow within Redbrick's people-first culture."
-
+bs = """
+Cyberium’s work delivering cybersecurity risk, compliance, and product development solutions is particularly compelling to me, as it combines full stack software development, cloud based proof of concepts, and problem solving in a collaborative consulting environment. I am excited about the opportunity to contribute to high quality technology solutions while learning from an experienced team.
+"""
 #example bs
 """
 LMI Technologies Inc’s work developing 3D machine vision sensors and manufacturing infrastructure is particularly
@@ -87,5 +88,5 @@ if (__name__ == "__main__"):
     write_file(text)
 
     # Wait to generate pdf, rename and clear
-    time.sleep(15)
+    time.sleep(10)
     clear_files()
