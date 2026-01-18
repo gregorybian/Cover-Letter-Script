@@ -1,52 +1,67 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Long Lined Cover Letter
-% LaTeX Template
-% Version 2.0 (September 17, 2021)
-%
-% This template originates from:
-% https://www.LaTeXTemplates.com
-%
-% Authors: Wlving Lee
-% (lee.wlving@connect.um.edu.mo)
-%
-% License:
-% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
 
-\documentclass{article}
-
-\usepackage{charter} % Use the Charter font
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-
-\usepackage[
-	a4paper, % Paper size
-	top=1in, % Top margin
-	bottom=1in, % Bottom margin
-	left=1in, % Left margin
-	right=1in, % Right margin
-	%showframe % Uncomment to show frames around the margins for debugging purposes
-]{geometry}
-
-\setlength{\parindent}{0pt} % Paragraph indentation
-\setlength{\parskip}{1em} % Vertical space between paragraphs
-
-\usepackage{graphicx} % Required for including images
-
-\usepackage{fancyhdr} % Required for customizing headers and footers
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
 
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\parskip}{0.75em}   % space between paragraphs
+\setlength{\parindent}{0pt}    % no indentation
 
 
+\urlstyle{same}
 
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
 
 %---------------------------------------------------------------------------%
@@ -55,21 +70,6 @@
 
 
 
-%here%
-\newcommand{\company}{Tesla}
-\newcommand{\position}{Software Developer}
-\newcommand{\employer}{John Doe}
-\newcommand{\address}{123 hello street}
-\newcommand{\city}{Vancouver}
-\newcommand{\state}{BC}
-\newcommand{\postal}{V7E465}
-\newcommand{\length}{4}
-
-
-
-
-
-%---------------------------------------------------------------------------%
 
 
 
@@ -79,95 +79,88 @@
 
 
 
+%variables%
+\newcommand{\company}{Honeywell}
+\newcommand{\position}{Embedded Engineer}
+\newcommand{\employer}{}
+\newcommand{\address}{400 Maple Grove Road}
+\newcommand{\length}{16}
+\newcommand{\bs}{Redbrick’s mission to reimagine the modern browser through large-scale Chromium development and a thoughtful, user-focused design is particularly compelling to me, as it combines complex C++ engineering with real-world impact on how people work every day. As someone who values responsibility, collaboration, and mentorship, I am excited about the opportunity to contribute and grow within Redbrick's people-first culture.}
+%end%
 
 
 
 
-\fancypagestyle{firstpage}{%
-	\fancyhf{} % Clear default headers/footers
-	\renewcommand{\headrulewidth}{0pt} % No header rule
-	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
-}
 
-\fancypagestyle{subsequentpages}{%
-	\fancyhf{} % Clear default headers/footers
-	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
-	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
-}
 
-\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
-\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
 
-%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	FIRST PAGE HEADER
-%----------------------------------------------------------------------------------------
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-\includegraphics[width=0.4\textwidth]{images/ubclogo.png} % Logo
+\begin{center}
+    \textbf{\Huge \scshape Gregory Bian} \\ \vspace{1pt}
+    \small 604-652-7598 $|$ \href{mailto:gregorybian100@gmail.com}{gregorybian100@gmail.com} $|$ 
+     \href{https://www.linkedin.com/in/gregorybian/}{\underline{Linkedin}} $|$
+     \href{https://github.com/gregorybian}{\underline{Github}} $|$
+    \href{https://gregorybian.github.io}{\underline{Portfolio}}
+\end{center}\vspace{-1em} 
 
-\vspace{-1em} % Pull the rule closer to the logo
-
-\rule{\linewidth}{1pt} % Horizontal rule
-
-\bigskip % Vertical whitespace
-
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
-
-\hfill
+\vspace{1em}
 \begin{tabular}{l @{}}
-	\today \bigskip\\ % Date
-	Gregory Bian \\
-	11280 Frigate Court, \\
-    Richmond, BC V7E4M4\\ % Address
-	Phone: (604) 652-7598 \\
-	Email: \href{mailto:gregorybian100@gmail.com}{\underline{gregorybian100@gmail.com}}
+    \today \\ % Date
 \end{tabular}
-
-
-%----------------------------------------------------------------------------------------
-%	ADDRESSEE AND GREETING
-%----------------------------------------------------------------------------------------
 
 \begin{tabular}{@{} l}
 	\employer    \\
 	Hiring Manager \\
 	\company \\
-	\address \\
-	\city, \state\ \postal
+    \address \\
+
 \end{tabular}
 
 \bigskip % Vertical whitespace
 
-Dear \company\ Hiring Manger,
+Dear \company\ Hiring Manager,
 
-\bigskip % Vertical whitespace
 
 %----------------------------------------------------------------------------------------
 %	LETTER CONTENT
 %----------------------------------------------------------------------------------------
-I am writing to express my interest in the \position\ position at \company. With a strong background in computer engineering, a proven track record in both software and firmware roles, and a commitment to continuous learning and improvement, I am confident in my ability to contribute effectively to your team.
+I am writing to express my interest in the \position\ position at \company. I am a second-year computer engineering student at UBC with a passion for embedded systems and robotics. \bs Through my coursework and projects, I have developed experience programming microcontrollers in C/C++, designing and reviewing circuits and schematics, and working with communication protocols such as I2C, SPI, and CAN. I am motivated to apply these skills in a fast-paced environment while learning from a multidisciplinary team pushing the boundaries of robotic hardware.
 
-In my current position as a Firmware developer on the UBC Solar Design team, I am writing firmware to build a solar-powered car to compete at the Formula Sun Grand Prix. Over the past two months, I have been working on firmware for the driver dashboard, where I have implemented a Real-Time Operating System (RTOS) on STM32 to schedule tasks and prioritize low-latency updates. Currently, I am working on developing firmware for the LCD to have two-page functionality using Dual Buffering to minimize display latency and optimize memory usage. Overall, this experience has taught me to work in a collaborative team environment using version control systems such as Git while adhering to established coding standards for documentation and testing, skills I am eager to contribute as a \position\ at \company.
+In my current role as an embedded firmware developer with UBC Solar Racing's design team, I have been working on developing firmware in C for an STM32 microcontroller to display driver and diagnostic data on an LCD screen. For this project, I interpreted STM32 pin-out diagrams to read and write data to the LCD, scheduled tasks concurrently with LCD updates using FreeRTOS, and read data over the CAN bus to be displayed on the LCD screen. After consulting with the Power and Signals and BMS subteams to ensure that my firmware met hardware constraints, I was able to improve visibility of relevant data shown to drivers by 30\% and confirm reliable data transmission for diagnostic data to ensure driver safety. This work accelerated my knowledge of embedded systems and working within a team, making me well equipped to contribute to your team.
 
-Currently, I am pursuing a Bachelor of Applied Science in Computer Engineering at the University of British Columbia. My technical skill set is diverse and robust, including proficiency in multiple programming languages such as C, C++, Python, Java, and JavaScript. I have experience in various development tools and frameworks, including full-stack development environments like React, version control systems like Git, and Linux-based systems. My academic and practical experience has equipped me with a strong foundation, enabling me to effectively tackle complex technical challenges.
+My leadership, teamwork, and communication skills are demonstrated in my previous role as an STEM and Computing/Robotics Instructor at UBC Geering Up Outreach. In this role, I taught week-long summer camps to up to 30 students each week on topics such as circuit design and programming with Arduino, computer architecture, and introduction to Python. For each lesson, I communicated effectively with my co-instructor to create interactive and engaging lesson plans, coordinated volunteers to gather necessary materials, and facilitated a fun and enjoyable learning experience for the students. As a result, I was able to keep camper incidents to a minimum resulting in positive feedback and satisfaction scores on post-camp surveys. I would be excited to apply these skills to this role while furthering my technical experience.
 
-I am excited about the opportunity to bring my technical expertise and collaborative spirit to \company. I am available for a \length-month term starting Summer 2026 and welcome the opportunity to discuss how my skills and experiences align with your needs. Please feel free to contact me via email at \href{mailto:gregorybian100@gmail.com}{\underline{gregorybian100@gmail.com}} or by phone at 604-652-7598.
+Beyond work, I enjoy working on robotics and automation side projects displayed on my \href{https://gregorybian.github.io}{\underline{Portfolio}}. I would love the opportunity to bring my passion for robotics and collaborative spirit to \company. I am available for a \length-month term starting May 2026 and welcome the opportunity to discuss how my skills and experiences align with your needs. Please feel free to contact me through email at \href{mailto:gregorybian100@gmail.com}{\underline{gregorybian100@gmail.com}} or by phone at 604-652-7598.
 
 Thank you for your time and consideration. I look forward to the possibility of contributing to your team.
-
 \bigskip % Vertical whitespace
 
 Sincerely,
+\bigskip % Vertical whitespace
 
 Gregory Bian
 
 \vspace{10pt}
-\includegraphics[width=0.12\textwidth]{images/signature.png}
-
 
 \end{document}
