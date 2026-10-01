@@ -1,0 +1,269 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeDesignSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+      \small #5 & \small #6 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\resumeSubheadingNoSpace}[4]{
+  \vspace{-15pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Gregory Bian} \\ \vspace{1pt}
+    \small 604-652-7598 $|$ \href{mailto:gregorybian100@gmail.com}{gregorybian100@gmail.com} $|$ 
+     \href{https://www.linkedin.com/in/gregorybian/}{\underline{Linkedin}} $|$
+     \href{https://github.com/gregorybian}{\underline{Github}} $|$
+    \href{https://gregorybian.github.io}{\underline{Portfolio}}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Expected May 2028}
+      {Bachelor of Applied Science, Computer Engineering (Co-op)}{Vancouver, BC}
+   \end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+ \small{\item{
+     \textbf{Programming \& Frameworks}{: C, C++, Python, Java, JavaScript (React), Bash, ARM Assembly, } \\
+     \textbf{Firmware \& Embedded Systems}{: FreeRTOS, STM32, CAN, SPI, I2C, UART, FPGA}\\
+     \textbf{Systems \& Tools}{: Git, Linux (Ubuntu), CMake, Docker, Pytest, JUnit}
+    }}
+\end{itemize}
+
+%-----------WORK EXPERIENCE-----------
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Geotab}{Burnaby, BC}
+      {Embedded Software Developer Intern -- Vehicle Platform Development}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Owned end-to-end firmware development for \textbf{8 new vehicle platforms} across EV, PHEV, HEV, and ICE powertrains, expanding GO device support to \textbf{10+ OEMs} including Tesla, Hyundai, Volkswagen, and Renault.}
+        \resumeItem{Integrated 30+ vehicle signals and identification tags using OBD-II (SAE J1979), UDS (ISO 14229) over ISO-TP, J1939, and passive broadcast CAN, giving fleet customers EV battery, range, speed, and odometer data on newly supported vehicles.}
+        \resumeItem{Developed automatic vehicle signal-processing workflows, implementing CAN parsing, logging logic, and automated validation scripts to improve the \textbf{availability of telematics data for clients} across multiple vehicle platforms.}
+        \resumeItem{Leveraged Claude Skills and custom plugins to automate vehicle platform generation, vehicle signal integration, and test suite debugging, developing reusable plugins adopted by 10+ engineers to streamline  workflows.}
+        \resumeItem{Debugged firmware and hardware issues across vehicle platforms, analyzing CAN traffic, device logs, and hardware behavior to identify root causes and implement \textbf{reliable fixes for customer-facing vehicle integrations.}}
+        \resumeItem{Authored and debugged Unit and SIL test suites, simulating real-time CAN-BUS signals and requests, validating GO device firmware logic and behavior under \textbf{time-constrained scenarios.}}
+    \resumeItemListEnd
+    %  
+\resumeSubHeadingListEnd
+
+%-----------ENGINEERING DESIGN TEAMS-----------
+
+\section{Engineering Student Design Teams}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {UBC Solar Racing}{Vancouver, BC}
+      {Embedded Systems Team Lead}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Leading a 6-person embedded team within a cross-disciplinary team of 80+ software, electrical, and mechanical engineers to design, prototype, and race a solar car, Cascadia, at FSGP and ASC solar racing competitions.}
+        \resumeItem{Led end-to-end integration tests, verifying CAN communication across ECUs, debugging failing firmware logic, and testing safety features for motor control, ensuring precise and reliable control over all safety-critical systems.}
+        \resumeItem{Automated the CAN processing workflow from firmware definitions to DBC generation and Grafana dashboard deployment using Claude Skills, reducing repetitive engineering effort by 70\% and improving data consistency.}
+      \resumeItemListEnd
+    \resumeSubheadingNoSpace
+      {}{}
+      {Embedded Firmware Developer}{Sep 2025 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Architected firmware for the Driver Dashboard, integrating functionality for a 5-page LCD Screen, accelerator potentiometer signal processing for motor control, GPIO-based lighting controls, and CAN communication.}
+        \resumeItem{Developed firmware for the vehicle telemetry board, writing low-level drivers for UART and I2C peripherals including radio, cellular, GPS, and IMU modules to enable reliable vehicle data collection and communication.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart        
+         \resumeProjectHeading
+          {\textbf{NotiFlow Course Tracker} $|$ \emph{JavaScript (React), Flask, Python}}{Nov 2025 -- Dec 2025}
+          \resumeItemListStart
+            \resumeItem{Led a team of 5 in developing a Course Tracking Chrome Extension; implemented a React-based UI and integrated Chrome Local Storage APIs to store data locally, improving usability and reliability.}
+            \resumeItem{Leveraged Flask routing to send and receive data between the Chrome Extension and backend Python scripts and support features such as Canvas API access, BeautifulSoup webscraping and OpenAI API prompt filtering.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Bare-Metal Tron Game} $|$ \emph{C, RISC-V Assembly, FPGA}}{Nov 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a bare-metal Tron game in C, generating VGA output for real-time graphics rendering on a DE10-Lite FPGA and supporting multiplayer or single-player gameplay against a logic-driven robot.}
+            \resumeItem{Implemented hardware interrupt-driven control logic using RISC-V Assembly to handle player and robot movement, collision detection, and real-time HEX display updates.}
+          \resumeItemListEnd
+            
+        % \resumeProjectHeading
+        %   {\textbf{Single-Cycle RISC-V CPU} $|$ \emph{SystemVerilog, FPGA, RISC-V Assembly, Questa}}{Nov 2025 -- Dec 2025}
+        %   \resumeItemListStart
+        %     \resumeItem{Architected a single-cycle CPU in SystemVerilog, executing RV32 machine code instructions to perform arithmetic and drive 7-segment displays and LEDs from switch inputs on a DE10-Lite FPGA.}
+        %     \resumeItem{Developed a SystemVerilog testbench to verify hardware functionality using waveform analysis in Siemens Questa and confirm datapath and control logic correctness during instruction execution.}
+        %     \resumeItemListEnd
+        % \resumeProjectHeading
+        %   {\textbf{Combination Lock and Keypad} $|$ \emph{SystemVerilog, FPGA}}{Nov 2025}
+        %   \resumeItemListStart
+        %     \resumeItem{Designed and implemented a SystemVerilog finite state machine for a combination-lock module simulating a vault
+        %     safe, supporting password entry, cancellation, and lock/unlock states with real-time 7-segment display updates.}
+        %     \resumeItem{Synchronized clock signals between two DE10-Lite FPGA boards, enabling reliable parsing of keypress data from the external keyboard scanning module.}
+        %     \resumeItemListEnd
+        % \resumeProjectHeading
+        %   {\textbf{Bare-Metal Tron Game} $|$ \emph{C, RISC-V Assembly, FPGA}}{Nov 2025}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a bare-metal Tron game in C, generating VGA output for real-time graphics rendering on a DE10-Lite FPGA and featuring multiplayer or single-player against a simple logic-driven robot.}
+        %     \resumeItem{Implemented hardware interrupt–driven control logic using RISC-V Assembly to handle player and robot movement, collision detection (deaths), and real-time HEX display updates.}
+        %     \resumeItemListEnd
+        
+        % \resumeProjectHeading
+        %   {\textbf{Hand Hygiene Compliance System} $|$ \emph{MicroPython, JavaScript, Raspberry Pi}}{Mar 2025 -- Apr 2025}
+        %   \resumeItemListStart
+        %     \resumeItem{Engineered a prototype embedded system with Raspberry Pi in MicroPython to monitor Hospital Hand Hygiene Compliance of workers, resulting in a 30\% higher efficiency compared to alternate designs.}
+        %     \resumeItem{Developed a full-stack user interface in HTML/CSS/JavaScript, featuring real-time compliance data visualization and an interactive reset button with two-way communication over Wi-Fi to backend systems.}
+        %     \resumeItemListEnd
+            
+      % \resumeProjectHeading
+      %     {\textbf{OpenCV Mini Sudoku Solver} $|$ \emph{Python, OpenCV, Numpy}}{Sep 2025}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a Python script using OpenCV to automatically solve Mini Sudoku puzzles by implementing image thresholding, grid detection, digit recognition, and algorithmic solving, resulting in a 95\% accurate solution.}
+      %       \resumeItem{Resolved Optical Character Recognition issues (ie. digit misclassification, noise in blanks) through iterative experimentation with contour detection, thresholding, and adaptive cropping.}
+      %     \resumeItemListEnd
+
+          
+      % \resumeProjectHeading
+      %     {\textbf{Real-Time Sports Betting Odds Tracker} $|$ \emph{Python, BeautifulSoup, Pandas, Matplotlib}}{Jul 2025 -- Sep 2025}
+      %     \resumeItemListStart
+      %       \resumeItem{Built a \textbf{Python-based} web scraping script to record live sports betting odds from various sportsbooks at 5-second intervals enabling a 20\% improvement in predictive betting accuracy.}
+      %       \resumeItem{Parsed dynamic HTML content using \textbf{BeautifulSoup} and structured time-series data with \textbf{Pandas} for analysis.}
+      %       \resumeItem{Integrated \textbf{Matplotlib} to visualize odds movement trends, volatility, and line shifts.}
+      %     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    %
+
+
+%-------------------------------------------
+\end{document}

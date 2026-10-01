@@ -1,0 +1,5 @@
+{
+  "name": "job-apps",
+  "version": "1.0.0",
+  "description": "Generate a tailored cover letter or resume PDF for a specific company and job posting, from this repo's LaTeX sources."
+}
