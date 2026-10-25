@@ -140,18 +140,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of British Columbia}{Expected May 2028}
-      {Bachelor of Applied Science, Computer Engineering (Co-op)}{Vancouver, BC}
+      {Bachelor of Applied Science, Computer Engineering}{Vancouver, BC}
    \end{itemize}
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
- \small{\item{
-     \textbf{Programming \& Frameworks}{: C, C++, Python, Java, JavaScript (React), Bash, ARM Assembly, } \\
-     \textbf{Firmware \& Embedded Systems}{: FreeRTOS, STM32, CAN, SPI, I2C, UART, FPGA}\\
-     \textbf{Systems \& Tools}{: Git, Linux (Ubuntu), CMake, Docker, Pytest, JUnit}
-    }}
-\end{itemize}
 
 %-----------WORK EXPERIENCE-----------
 
@@ -161,19 +152,16 @@
       {Geotab}{Burnaby, BC}
       {Embedded Software Developer Intern -- Vehicle Platform Development}{May 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Owned end-to-end firmware development for \textbf{8 new vehicle platforms} across EV, PHEV, HEV, and ICE powertrains, expanding GO device support to \textbf{10+ OEMs} including Tesla, Hyundai, Volkswagen, and Renault.}
-        \resumeItem{Integrated 30+ vehicle signals and identification tags using OBD-II (SAE J1979), UDS (ISO 14229) over ISO-TP, J1939, and passive broadcast CAN, giving fleet customers EV battery, range, speed, and odometer data on newly supported vehicles.}
-        \resumeItem{Developed automatic vehicle signal-processing workflows, implementing CAN parsing, logging logic, and automated validation scripts to improve the \textbf{availability of telematics data for clients} across multiple vehicle platforms.}
-        \resumeItem{Leveraged Claude Skills and custom plugins to automate vehicle platform generation, vehicle signal integration, and test suite debugging, developing reusable plugins adopted by 10+ engineers to streamline  workflows.}
-        \resumeItem{Debugged firmware and hardware issues across vehicle platforms, analyzing CAN traffic, device logs, and hardware behavior to identify root causes and implement \textbf{reliable fixes for customer-facing vehicle integrations.}}
-        \resumeItem{Authored and debugged Unit and SIL test suites, simulating real-time CAN-BUS signals and requests, validating GO device firmware logic and behavior under \textbf{time-constrained scenarios.}}
+        \resumeItem{Added firmware support in C to 15+ OEM vehicles for Geotab's telematics platform and customer-base.}
+        \resumeItem{Integrated 30+ vehicle signals and VIN decoding using OBD-II, UDS over ISO-TP, J1939 CAN protocols, giving fleet customers EV battery, range, speed, and odometer data on newly supported vehicles.}
+        \resumeItem{Cut stale feature flag removal effort by 90\% by automating code edits, PRs, and CI/SIL monitoring end-to-end with Claude Skills on VMs; removed 20+ flags and adopted the process team-wide.}
     \resumeItemListEnd
     %  
 \resumeSubHeadingListEnd
 
 %-----------ENGINEERING DESIGN TEAMS-----------
 
-\section{Engineering Student Design Teams}
+\section{Engineering Design Teams and Extracurriculars}
   \resumeSubHeadingListStart
       
 % -----------Multiple Positions Heading-----------
@@ -188,36 +176,51 @@
 
     \resumeSubheading
       {UBC Solar Racing}{Vancouver, BC}
-      {Embedded Systems Team Lead}{May 2026 -- Present}
+      {Embedded Systems Team Lead}{Jun 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Leading a 6-person embedded team within a cross-disciplinary team of 80+ software, electrical, and mechanical engineers to design, prototype, and race a solar car, Cascadia, at FSGP and ASC solar racing competitions.}
-        \resumeItem{Led end-to-end integration tests, verifying CAN communication across ECUs, debugging failing firmware logic, and testing safety features for motor control, ensuring precise and reliable control over all safety-critical systems.}
-        \resumeItem{Automated the CAN processing workflow from firmware definitions to DBC generation and Grafana dashboard deployment using Claude Skills, reducing repetitive engineering effort by 70\% and improving data consistency.}
+        \resumeItem{Lead a 9-person subteam within an 80+ member team, delivering firmware and telemetry for a 4-ECU solar car.}
+        \resumeItem{Plan milestones for a two-year design cycle, directing design and code reviews and mentoring members.}
+        \resumeItem{Architected SIL and Regression testing pipelines using Renode hardware emulation and Robot testing Frameworks to simulate RTOS and hardware edge cases.}
       \resumeItemListEnd
     \resumeSubheadingNoSpace
       {}{}
-      {Embedded Firmware Developer}{Sep 2025 -- May 2026}
+      {Senior Designer}{Apr 2026 -- Jun 2026}
       \resumeItemListStart
-        \resumeItem{Architected firmware for the Driver Dashboard, integrating functionality for a 5-page LCD Screen, accelerator potentiometer signal processing for motor control, GPIO-based lighting controls, and CAN communication.}
-        \resumeItem{Developed firmware for the vehicle telemetry board, writing low-level drivers for UART and I2C peripherals including radio, cellular, GPS, and IMU modules to enable reliable vehicle data collection and communication.}
+        \resumeItem{Led end-to-end integration tests to verify telemetry pipelines over radio/cellular, safety features for motor control, and integration with the BMS team, ensuring reliable control over all safety-critical systems.}
+        \resumeItem{Developed automated Bash and Python testing scripts to improve the reliability and coverage of integration tests.}
+      \resumeItemListEnd
+      \resumeSubheadingNoSpace
+      {}{}
+      {Embedded Firmware Developer}{Sep 2025 -- Apr 2026}
+      \resumeItemListStart
+        \resumeItem{Architected the multi-page LCD dashboard firmware, displaying 5x more vehicle data than previous iterations for faster fault detection and real-time driver awareness.}
+        \resumeItem{Cut live vehicle telemetry packet loss by 30\% by writing UART drivers for an XBee radio, using RTOS semaphores to synchronize shared telemetry buffers across concurrent tasks.}
+        \resumeItem{Diagnosed 5+ hardware issues on custom PCBs by probing signals with oscilloscopes, multimeters, and PCANs.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {nwPlus}{Vancouver, BC}
+      {Engagement Coordinator}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Fostering a collaborative team culture across a 50+ member organizing committee to deliver the largest Canadian Northwestern University hackathon, giving 600+ participants a platform to showcase their technical skills.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+
 %-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart        
-         \resumeProjectHeading
-          {\textbf{NotiFlow Course Tracker} $|$ \emph{JavaScript (React), Flask, Python}}{Nov 2025 -- Dec 2025}
-          \resumeItemListStart
-            \resumeItem{Led a team of 5 in developing a Course Tracking Chrome Extension; implemented a React-based UI and integrated Chrome Local Storage APIs to store data locally, improving usability and reliability.}
-            \resumeItem{Leveraged Flask routing to send and receive data between the Chrome Extension and backend Python scripts and support features such as Canvas API access, BeautifulSoup webscraping and OpenAI API prompt filtering.}
-          \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{Bare-Metal Tron Game} $|$ \emph{C, RISC-V Assembly, FPGA}}{Nov 2025}
-          \resumeItemListStart
-            \resumeItem{Developed a bare-metal Tron game in C, generating VGA output for real-time graphics rendering on a DE10-Lite FPGA and supporting multiplayer or single-player gameplay against a logic-driven robot.}
-            \resumeItem{Implemented hardware interrupt-driven control logic using RISC-V Assembly to handle player and robot movement, collision detection, and real-time HEX display updates.}
-          \resumeItemListEnd
+% \section{Projects}
+%     \resumeSubHeadingListStart        
+%          \resumeProjectHeading
+%           {\textbf{NotiFlow Course Tracker} $|$ \emph{JavaScript (React), Flask, Python}}{Nov 2025 -- Dec 2025}
+%           \resumeItemListStart
+%             \resumeItem{Led a team of 5 in developing a Course Tracking Chrome Extension; implemented a React-based UI and integrated Chrome Local Storage APIs to store data locally, improving usability and reliability.}
+%             \resumeItem{Leveraged Flask routing to send and receive data between the Chrome Extension and backend Python scripts and support features such as Canvas API access, BeautifulSoup webscraping and OpenAI API prompt filtering.}
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{Bare-Metal Tron Game} $|$ \emph{C, RISC-V Assembly, FPGA}}{Nov 2025}
+%           \resumeItemListStart
+%             \resumeItem{Developed a bare-metal Tron game in C, generating VGA output for real-time graphics rendering on a DE10-Lite FPGA and supporting multiplayer or single-player gameplay against a logic-driven robot.}
+%             \resumeItem{Implemented hardware interrupt-driven control logic using RISC-V Assembly to handle player and robot movement, collision detection, and real-time HEX display updates.}
+%           \resumeItemListEnd
             
         % \resumeProjectHeading
         %   {\textbf{Single-Cycle RISC-V CPU} $|$ \emph{SystemVerilog, FPGA, RISC-V Assembly, Questa}}{Nov 2025 -- Dec 2025}
@@ -261,8 +264,17 @@
       %       \resumeItem{Parsed dynamic HTML content using \textbf{BeautifulSoup} and structured time-series data with \textbf{Pandas} for analysis.}
       %       \resumeItem{Integrated \textbf{Matplotlib} to visualize odds movement trends, volatility, and line shifts.}
       %     \resumeItemListEnd
-    \resumeSubHeadingListEnd
+    % \resumeSubHeadingListEnd
     %
+    %-----------PROGRAMMING SKILLS-----------
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Programming \& Frameworks}{: C, C++, Python, Java, JavaScript (React), Bash, ARM Assembly} \\
+        \textbf{Embedded Systems}{: FreeRTOS, STM32, CAN (OBD-II, UDS, ISO-TP, J1939), UART, SPI, I2C}\\
+        \textbf{Tools}{: Claude Code, Linux (Ubuntu), Git, J-Link, STM32CubeMX, CMake, Grafana, InfluxDB, SavvyCAN}
+        }}
+    \end{itemize}
 
 
 %-------------------------------------------
