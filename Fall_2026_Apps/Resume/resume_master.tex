@@ -64,7 +64,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1\vspace{-2pt}}
   }
 }
 
@@ -102,7 +102,7 @@
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \newcommand{\resumeSubheadingNoSpace}[4]{
-  \vspace{-15pt}\item
+  \vspace{-18pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -145,24 +145,72 @@
 
 
 %-----------WORK EXPERIENCE-----------
-
-\section{Work Experience}
+% Accomplished x measured by y by doing z. 
+\section{Technical Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Geotab}{Burnaby, BC}
-      {Embedded Software Developer Intern -- Vehicle Platform Development}{May 2026 -- Present}
+      {Embedded Software Engineer Intern -- Vehicle Platform Development}{May 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Added firmware support in C to 15+ OEM vehicles for Geotab's telematics platform and customer-base.}
-        \resumeItem{Integrated 30+ vehicle signals and VIN decoding using OBD-II, UDS over ISO-TP, J1939 CAN protocols, giving fleet customers EV battery, range, speed, and odometer data on newly supported vehicles.}
-        \resumeItem{Cut stale feature flag removal effort by 90\% by automating code edits, PRs, and CI/SIL monitoring end-to-end with Claude Skills on VMs; removed 20+ flags and adopted the process team-wide.}
+        \resumeItem{Developed production code on 6M+ vehicles, adding 15+ OEM vehicle types to Geotab's telematics platform}
+        \resumeItem{Collected 10B+ data points by designing signal processing work
+        flows with dependency gating, software filtering and automated validation to ensure accurate vehicle data collection and backend processing}
+        \resumeItem{Migrated 200 SIL test suites to use real, unmasked vehicle data for VIN decoding and vehicle identification, improving test coverage and removing the need for bench simulations}
+        % \resumeItem{Hardened internal code generation tooling by documenting 5+ bugs and supporting non-VIN vehicle identifiers.}
+        \resumeItem{Reduced stale feature flag removal effort by 90\% by automating code edits, PRs, Jira updates, and CI/SIL monitoring end-to-end with Claude Skills on VMs; removed 50+ flags and adopted team-wide.}
     \resumeItemListEnd
     %  
-\resumeSubHeadingListEnd
+    \resumeSubheading
+      {UBC Solar Racing}{Vancouver, BC}
+      {Embedded Systems Team Lead}{Jun 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Led a 9-person subteam within an 80+ member team, delivering firmware and telemetry for a 4-ECU solar car}
+        \resumeItem{Planned project milestones for a 2-year design cycle, directing design and code reviews and mentoring members}
+        \resumeItem{Architected SIL and Regression testing pipelines using Renode hardware emulation and Robot testing Frameworks to simulate RTOS and hardware edge cases}
+      \resumeItemListEnd
+    \resumeSubheadingNoSpace
+      {}{}
+      {Senior Designer Engineer}{Apr 2026 -- Jun 2026}
+      \resumeItemListStart
+        \resumeItem{Validated safety-critical systems before race day by leading end-to-end integration tests of radio/cellular telemetry, motor control safety features, and BMS interfaces}
+        \resumeItem{Developed automated Bash and Python testing scripts to improve the reliability and coverage of integration tests}
+      \resumeItemListEnd
+      \resumeSubheadingNoSpace
+      {}{}
+      {Embedded Firmware Engineer}{Sep 2025 -- Apr 2026}
+      \resumeItemListStart
+        \resumeItem{Developed firmware to display 6x more data on the LCD Dashboard than previous iterations by architecting a multi-page design, improving real-time driver awareness, fault detection, and decision making}
+        % Architected the multi-page LCD dashboard firmware, displaying 5x more vehicle data than previous iterations for faster fault detection and real-time driver awareness.}
+        \resumeItem{Characterized and eliminated live telemetry packet loss (250 bytes/s $\rightarrow$ 0) by using RTOS semaphores in UART drivers for an XBee radio module to synchronize shared buffers across concurrent tasks}
+        \resumeItem{Added 50+ vehicle signals to the CAN bus including motor temperature, GPS coordinates, and various diagnostics}
+        \resumeItem{Diagnosed 5+ hardware issues on custom PCBs by probing signals with oscilloscopes, multimeters, and PCANs}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------ENGINEERING DESIGN TEAMS-----------
 
-\section{Engineering Design Teams and Extracurriculars}
+\section{Projects}
+    \resumeSubHeadingListStart        
+      \resumeProjectHeading{\textbf{NotiFlow Course Tracker} $|$ \emph{JavaScript (React), Flask, Python}}{Nov 2025 -- Dec 2025}
+        \resumeItemListStart
+          \resumeItem{Led a team of 5 in developing a Course Tracking Chrome Extension; implemented a React-based UI and integrated Chrome Local Storage APIs to store data locally, improving usability and reliability.}
+          \resumeItem{Leveraged Flask routing to send and receive data between the Chrome Extension and backend Python scripts and support features such as Canvas API access, BeautifulSoup webscraping and OpenAI API prompt filtering.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Extracurriculars}
   \resumeSubHeadingListStart
+      \resumeSubheading
+      {nwPlus}{Vancouver, BC}
+      {Engagement Coordinator}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Organized the largest hackathon in western Canada, hosting 750+ students, 50+ sponsors, and 150+ mentors}  
+\resumeItem{Fostered a collaborative community within a 50+ member organizing committee by planning team-building events}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
       
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -174,36 +222,7 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {UBC Solar Racing}{Vancouver, BC}
-      {Embedded Systems Team Lead}{Jun 2026 -- Present}
-      \resumeItemListStart
-        \resumeItem{Lead a 9-person subteam within an 80+ member team, delivering firmware and telemetry for a 4-ECU solar car.}
-        \resumeItem{Plan milestones for a two-year design cycle, directing design and code reviews and mentoring members.}
-        \resumeItem{Architected SIL and Regression testing pipelines using Renode hardware emulation and Robot testing Frameworks to simulate RTOS and hardware edge cases.}
-      \resumeItemListEnd
-    \resumeSubheadingNoSpace
-      {}{}
-      {Senior Designer}{Apr 2026 -- Jun 2026}
-      \resumeItemListStart
-        \resumeItem{Led end-to-end integration tests to verify telemetry pipelines over radio/cellular, safety features for motor control, and integration with the BMS team, ensuring reliable control over all safety-critical systems.}
-        \resumeItem{Developed automated Bash and Python testing scripts to improve the reliability and coverage of integration tests.}
-      \resumeItemListEnd
-      \resumeSubheadingNoSpace
-      {}{}
-      {Embedded Firmware Developer}{Sep 2025 -- Apr 2026}
-      \resumeItemListStart
-        \resumeItem{Architected the multi-page LCD dashboard firmware, displaying 5x more vehicle data than previous iterations for faster fault detection and real-time driver awareness.}
-        \resumeItem{Cut live vehicle telemetry packet loss by 30\% by writing UART drivers for an XBee radio, using RTOS semaphores to synchronize shared telemetry buffers across concurrent tasks.}
-        \resumeItem{Diagnosed 5+ hardware issues on custom PCBs by probing signals with oscilloscopes, multimeters, and PCANs.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {nwPlus}{Vancouver, BC}
-      {Engagement Coordinator}{May 2026 -- Present}
-      \resumeItemListStart
-        \resumeItem{Fostering a collaborative team culture across a 50+ member organizing committee to deliver the largest Canadian Northwestern University hackathon, giving 600+ participants a platform to showcase their technical skills.}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
+
 
 
 %-----------PROJECTS-----------
@@ -270,7 +289,7 @@
     \section{Technical Skills}
     \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Programming \& Frameworks}{: C, C++, Python, Java, JavaScript (React), Bash, ARM Assembly} \\
+        \textbf{Programming}{: C, C++, Python, Java, JavaScript (React), Bash, ARM Assembly} \\
         \textbf{Embedded Systems}{: FreeRTOS, STM32, CAN (OBD-II, UDS, ISO-TP, J1939), UART, SPI, I2C}\\
         \textbf{Tools}{: Claude Code, Linux (Ubuntu), Git, J-Link, STM32CubeMX, CMake, Grafana, InfluxDB, SavvyCAN}
         }}
