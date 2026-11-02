@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1793655372 "/home/gregorybian/Desktop/Cover-Letter-Script/Fall_2026_Apps/Resume/resume_master.tex" "resume_master.pdf" "resume_master" 1793655372
+["pdflatex"] 1793657714 "/home/gregorybian/Desktop/Cover-Letter-Script/Fall_2026_Apps/Resume/resume_master.tex" "resume_master.pdf" "resume_master" 1793657714
   "/etc/texmf/web2c/texmf.cnf" 1789676456 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gregorybian/Desktop/Cover-Letter-Script/Fall_2026_Apps/Resume/resume_master.tex" 1793655372 15464 91b084de33b848b723dae8b2162bae8f ""
+  "/home/gregorybian/Desktop/Cover-Letter-Script/Fall_2026_Apps/Resume/resume_master.tex" 1793657714 15370 530fd5b6c79e515f2d333aa9f29b6f2e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -85,9 +85,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1789676462 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1789676469 1405647 58f2c1c1c10ffc595cf42eb1c9d0c485 ""
-  "resume_master.aux" 1793655372 1320 82324b539fab4b4e4ff1ea00b9f0bb44 "pdflatex"
-  "resume_master.out" 1793655372 566 e02fa32e3fa87eb997b556ae7dba6f84 "pdflatex"
-  "resume_master.tex" 1793655372 15464 91b084de33b848b723dae8b2162bae8f ""
+  "resume_master.aux" 1793657714 1320 82324b539fab4b4e4ff1ea00b9f0bb44 "pdflatex"
+  "resume_master.out" 1793657714 566 e02fa32e3fa87eb997b556ae7dba6f84 "pdflatex"
+  "resume_master.tex" 1793657714 15370 530fd5b6c79e515f2d333aa9f29b6f2e ""
   (generated)
   "resume_master.aux"
   "resume_master.log"

@@ -132,7 +132,7 @@
     \textbf{\Huge \scshape Gregory Bian} \\ \vspace{1pt}
     \small 604-652-7598 $|$ \href{mailto:gregorybian100@gmail.com}{gregorybian100@gmail.com} $|$ 
      \href{https://www.linkedin.com/in/gregorybian/}{\underline{Linkedin}} $|$
-     \href{https://github.com/gregorybian}{\underline{Github}} $|$
+     \href{https://github.com/gregorybian}{\underline{GitHub}} $|$
     \small Canadian Citizen
 \end{center}
 %-----------EDUCATION-----------
@@ -153,7 +153,7 @@
       {Software Engineer Intern -- Vehicle Platform Development}{May 2026 -- Present}
       \resumeItemListStart
         \resumeItem{Developed production code on 6.5M+ vehicles, adding 15+ OEM vehicle types to Geotab's telematics platform}
-        \resumeItem{Collected 15M+ data points on 25k+ vehicles by designing signal processing workflows to debounce noise, fetch signal dependencies, and validate the data path to Google BigQuery with python tests}
+        \resumeItem{Collected 15M+ data points on 25k+ vehicles by building signal workflows that debounce noise and validate the data path to Google BigQuery with Python tests}
         \resumeItem{Migrated 100+ SIL test suites to use real, unmasked vehicle data for VIN decoding and vehicle identification, improving test coverage and removing the need for bench simulations}
         % \resumeItem{Hardened internal code generation tooling by documenting 5+ bugs and supporting non-VIN vehicle identifiers.}
         \resumeItem{Removed 50+ stale feature flags by automating the end-to-end removal process with Claude Skills on VMs, covering code deprecation, MR creation, CI/SIL monitoring, and Jira updates; adopted team-wide}
@@ -164,17 +164,17 @@
       {Embedded Systems Team Lead}{Jun 2026 -- Present}
       \resumeItemListStart
         \resumeItem{Led a 9-person subteam within an 80+ member team, delivering firmware and telemetry for a solar-powered car}
-        \resumeItem{Planned project milestones for a 2-year design cycle, directing design and code reviews and mentoring members}
-        \resumeItem{Integrated Claude Skills into day-to-day workflow to automate project initiation, ticket creation, Github PR reviews, and tracking todo items; built a dashboard to centralize cross-platform tracking}
-        \resumeItem{Architected SIL and Regression testing pipelines using Renode hardware emulation and Robot testing Frameworks to simulate RTOS and hardware edge cases}
+        \resumeItem{Directed design and code reviews for 50+ features across firmware and telemetry, mentoring members on code standards, use of hardware and tooling, and system architecture}
+        % \resumeItem{Integrated Claude Skills into day-to-day workflow to automate project initiation, ticket creation, GitHub PR reviews, and tracking todo items; built a dashboard to centralize cross-platform tracking}
+        \resumeItem{Architected SIL and Regression testing pipelines using Renode hardware emulation and Robot Framework to simulate RTOS and hardware edge cases}
       \resumeItemListEnd
     \resumeSubheadingNoSpace
       {}{}
-      {Senior Designer Engineer}{Apr 2026 -- Jun 2026}
+      {Senior Designer}{Apr 2026 -- Jun 2026}
       \resumeItemListStart
-        \resumeItem{Identified and resolved 30+ firmware issues by analyzing 25M+ data points over Grafana and InfluxDB during integration tests, unblocking the strategy and electrical teams' testing and clearing the car for driving days}
+        \resumeItem{Resolved 30+ firmware issues by analyzing 25M+ data points in Grafana and InfluxDB, unblocking electrical and strategy teams for driving days}
         % \resumeItem{Collected and monitored 25M+ data points on InfluxDB to verify peripheral functionality}
-        \resumeItem{Developed automated Bash and Python testing scripts to improve the reliability and coverage of integration tests}
+        \resumeItem{Built 10+ Python and Bash tools to simulate CAN traffic for bench tests and automate cellular and dev setup}
       \resumeItemListEnd
       \resumeSubheadingNoSpace
       {}{}
@@ -192,11 +192,12 @@
 
 \section{Projects}
     \resumeSubHeadingListStart        
-      \resumeProjectHeading{\textbf{NotiFlow Course Tracker} $|$ \emph{JavaScript (React), Flask, Python}}{Nov 2025 -- Dec 2025}
-        \resumeItemListStart
-          \resumeItem{Led a team of 5 in developing a Course Tracking Chrome Extension; implemented a React-based UI and integrated Chrome Local Storage APIs to store data locally, improving usability and reliability}
-          \resumeItem{Leveraged Flask routing to send and receive data between the Chrome Extension and backend Python scripts and support features such as Canvas API access, BeautifulSoup webscraping and OpenAI API prompt filtering}
-        \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Bare-Metal Tron Game} $|$ \emph{C, RISC-V Assembly, FPGA}}{Nov 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a bare-metal Tron game in C, generating VGA output for real-time graphics rendering on a DE10-Lite FPGA and featuring multiplayer or single-player against a simple logic-driven robot.}
+            \resumeItem{Implemented hardware interrupt–driven control logic using RISC-V Assembly to handle player and robot movement, collision detection, and real-time HEX display updates.}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \section{Extracurriculars}
@@ -291,8 +292,8 @@
     \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
         \textbf{Programming}{: C, C++, Python, Java, JavaScript (React), Bash, ARM Assembly} \\
-        \textbf{Embedded Systems}{: FreeRTOS, STM32, CAN (OBD-II, UDS, ISO-TP, J1939), UART, SPI, I2C}\\
-        \textbf{Tools}{: Claude Code, Linux (Ubuntu), Git, J-Link, STM32CubeMX, CMake, Grafana, InfluxDB, SavvyCAN}
+        \textbf{Embedded Systems}{: FreeRTOS, STM32, CAN (OBD-II, UDS, ISO-TP, J1939), UART, SPI, I2C, SWD, JTAG}\\
+        \textbf{Tools}{: Linux, Git, CMake, J-Link, Renode, SavvyCAN, PCAN, Oscilloscope, Robot Framework, Grafana, InfluxDB} \\
         }}
     \end{itemize}
 
